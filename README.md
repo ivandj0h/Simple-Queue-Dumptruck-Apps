@@ -11,7 +11,9 @@ https://github.com/ivandi1980/Simple-Queue-Dumptruck-Apps.git
 ```
 
 ## Database setup 
-Create Tables like below.
+Create Tables like below :
+
+
 ![Tables](assets/img/tables.jpg "This is the Tables")
 
 ## Run Server
