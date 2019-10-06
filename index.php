@@ -27,8 +27,8 @@
     <script>
         $(document).ready(function () {
             setInterval(function () {
-                $('#show').load('data.php')
-                $('#jam').load('jam.php')
+                $('#show').load('./backend/data.php')
+                $('#jam').load('./backend/jam.php')
             }, 1000);
         });    
     </script>
