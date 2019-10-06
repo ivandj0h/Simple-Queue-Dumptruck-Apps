@@ -12,7 +12,7 @@ https://github.com/ivandi1980/Simple-Queue-Dumptruck-Apps.git
 
 ## Database setup 
 Create Tables like below.
-![Tables](assets/img/screenshoot.jpg "This is the Tables")
+![Tables](assets/img/tables.jpg "This is the Tables")
 
 ## Run Server
 to run the server, you can use xampp, wamp, or : 
