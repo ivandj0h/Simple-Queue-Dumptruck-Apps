@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    
     <div class="container">
         <div class="logo">
             <img src="./assets/img/logo.png" alt="" srcset="">
@@ -22,7 +21,7 @@
         </div>
         <H2 id="jam"></H2>
     </div>
-    
+
     <script src="./assets/js/jquery-3.4.1.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -30,7 +29,7 @@
                 $('#show').load('./backend/data.php')
                 $('#jam').load('./backend/jam.php')
             }, 1000);
-        });    
+        });
     </script>
 </body>
 </html>
