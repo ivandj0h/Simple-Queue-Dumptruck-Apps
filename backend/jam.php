@@ -8,5 +8,5 @@ $kode = $result2['kode'];
 if(Empty($jam)) { 
 	echo "<font color=red>No Data!</font>"; } 
 	else if($jam2 && $kode='10' || $jam2 && $kode='20'){ 
-		echo '<font color=black>unit keluar pukul</font> ' . $jam2; }
-		else { echo '<font color=black>unit masuk pukul</font> ' . $jam; }
+		echo ' ' . $jam2; }
+		else { echo ' ' . $jam; }
