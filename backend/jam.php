@@ -6,7 +6,7 @@ $jam = $result['jam'];
 $jam2 = $result2['jam2'];
 $kode = $result2['kode'];
 if(Empty($jam)) { 
-	echo "<font color=red>No Data!</font>"; } 
+	echo '<font color=red>No Data!</font>'; } 
 	else if($jam2 && $kode='10' || $jam2 && $kode='20'){ 
-		echo ' ' . $jam2; }
-		else { echo ' ' . $jam; }
+		echo $jam2; }
+		else { echo $jam; }

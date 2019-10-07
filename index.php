@@ -18,10 +18,12 @@
             <div class="counter">
                 <span id="show"></span>
             </div>
-        </div>
+        
         <h2 id="jam"></h2>
+        <button onclick='pauseAudio()' type='button' class='button'>Pause Audio</button>
+        </div>
     </div>
-
+    
     <script src="./assets/js/jquery-3.4.1.min.js"></script>
     <script>
         $(document).ready(function () {
