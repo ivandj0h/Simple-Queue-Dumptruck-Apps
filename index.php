@@ -20,7 +20,6 @@
             </div>
         
         <h2 id="jam"></h2>
-        <button onclick='pauseAudio()' type='button' class='button'>Pause Audio</button>
         </div>
     </div>
     

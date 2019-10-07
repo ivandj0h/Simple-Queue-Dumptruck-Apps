@@ -7,25 +7,16 @@ $kode = $r['kode'];
 if($kode == '11') { 
 	echo "
 		<span class=\"warning\">1</span>
-		<audio autoplay id=myAudio>
-			<source src='assets/alarm/Loud_Alarm_Clock_Buzzer.mp3' type='audio/mp3' />
-		</audio>
 		"; 
 }
 elseif($kode == 10) { 
 	echo "
-		<span class=\"blink\">0</span>
-		<audio autoplay id=myAudio>
-			<source src='assets/alarm/Loud_Alarm_Clock_Buzzer.mp3' type='audio/mp3' />
-		</audio>	
+		<span class=\"blink\">0</span>	
 		"; 
 }
 elseif($kode == 20) { 
 	echo "
-		<span class=\"blink\">0</span>
-		<audio autoplay id=myAudio>
-			<source src='assets/alarm/Loud_Alarm_Clock_Buzzer.mp3' type='audio/mp3' />
-		</audio>
+		<span class=\"warning\">1</span>
 		"; 
 }
 elseif($kode == 21) { 
@@ -33,10 +24,7 @@ elseif($kode == 21) {
 }
 else { 
 	echo "
-		<span class=\"blink\">X</span>
-		<audio autoplay id=myAudio>
-			<source src='assets/alarm/Loud_Alarm_Clock_Buzzer.mp3' type='audio/mp3' />
-		</audio>	
+		<span class=\"blink\">0</span>
 	"; 
 }
 ?>
