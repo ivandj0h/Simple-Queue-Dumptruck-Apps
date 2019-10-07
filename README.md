@@ -26,3 +26,4 @@ php.exe -S localhost:80 -t <your-php-location>
 
 ## ScreenShoot
 ![Dashboard](assets/img/screenshoot.jpg "This is the dashboard")
+![Dashboard](assets/img/screenshoot-0.jpg "This is the dashboard")
