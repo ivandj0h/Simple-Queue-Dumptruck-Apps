@@ -28,4 +28,4 @@ php.exe -S localhost:80 -t <your-php-location>
 ![Dashboard](assets/img/captured_nodata.png "This is the dashboard")
 ![Dashboard](assets/img/captured_out.png "This is the dashboard")
 ![Dashboard](assets/img/captured_entri1.png "This is the dashboard")
-![Dashboard](assets/img/captured_entri1.png "This is the dashboard")
+![Dashboard](assets/img/captured_entri2.png "This is the dashboard")
