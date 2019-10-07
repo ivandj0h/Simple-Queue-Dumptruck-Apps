@@ -42,8 +42,7 @@ body {
 }
 
 .container h2 {
-    /* text-transform: uppercase; */
-    font-size: 40px;
+    font-size: 20px;
     margin: 0px;
     letter-spacing: 5px;
 }
@@ -65,7 +64,7 @@ body {
 
 .counter span {
     display: block;
-    font-size: 200px;
+    font-size: 173px;
     margin-top: 5%;
     font-weight: bolder;
 }

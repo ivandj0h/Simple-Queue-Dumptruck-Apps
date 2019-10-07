@@ -19,7 +19,7 @@
                 <span id="show"></span>
             </div>
         </div>
-        <H2 id="jam"></H2>
+        <h2 id="jam"></h2>
     </div>
 
     <script src="./assets/js/jquery-3.4.1.min.js"></script>
