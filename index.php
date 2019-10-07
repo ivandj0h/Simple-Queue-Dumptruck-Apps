@@ -29,7 +29,7 @@
             setInterval(function () {
                 $('#show').load('./backend/data.php')
                 $('#jam').load('./backend/jam.php')
-            }, 1000);
+            },3000);
         });
     </script>
 </body>

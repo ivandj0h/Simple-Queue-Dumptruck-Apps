@@ -64,8 +64,8 @@ body {
 
 .counter span {
     display: block;
-    font-size: 173px;
-    margin-top: 5%;
+    font-size: 300px;
+    margin-top: -20%;
     font-weight: bolder;
 }
 

@@ -1,28 +1,61 @@
 <?php
-// $servername = "localhost";
-// $username = "root";
-// $password = "password";
-// $dbname = "hopper";
 
-// // Create connection
-// $conn = new mysqli($servername, $username, $password, $dbname);
-// // Check connection
-// if ($conn->connect_error) {
-//     die("Connection failed: " . $conn->connect_error);
-// }
 include 'db.php';
 
 $dat = $_GET["ultra"];
 
-// $jam = date("Y-m-d h:i:sa");
+// Panel 1 (11 masuk ---- 10 keluar)
 
-$sql = "INSERT INTO antrian (kode) VALUES ('$dat')";
+if($dat > 200) {  // <== ini untuk merubah jarak
 
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    $kod = '10';
+    $sql = "INSERT INTO antrian (kode) VALUES ('$kod')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+    $conn->close();
+}
+else {
+
+    $kod = '11';
+
+    $sql = "INSERT INTO antrian (kode) VALUES ('$kod')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+    $conn->close();
 }
 
-$conn->close();
+// // Panel 2 (21 masuk ---- 20 keluar)
+// if($dat > 200) {  // <== ini untuk merubah jarak
+
+//     $kod = '20';
+//     $sql = "INSERT INTO antrian (kode) VALUES ('$kod')";
+
+//     if ($conn->query($sql) === TRUE) {
+//         echo "New record created successfully";
+//     } else {
+//         echo "Error: " . $sql . "<br>" . $conn->error;
+//     }
+//     $conn->close();
+// }
+// else {
+
+//     $kod = '21';
+
+//     $sql = "INSERT INTO antrian (kode) VALUES ('$kod')";
+
+//     if ($conn->query($sql) === TRUE) {
+//         echo "New record created successfully";
+//     } else {
+//         echo "Error: " . $sql . "<br>" . $conn->error;
+//     }
+//     $conn->close();
+// }
 ?>
