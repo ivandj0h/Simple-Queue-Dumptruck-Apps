@@ -6,9 +6,9 @@ $dat = $_GET["ultra"];
 
 // Panel 1 (11 masuk ---- 10 keluar)
 
-if($dat > 200) {  // <== ini untuk merubah jarak
+if($dat <= 200) {  // <== ini untuk merubah jarak
 
-    $kod = '10';
+    $kod = '11';
     $sql = "INSERT INTO antrian (kode) VALUES ('$kod')";
 
     if ($conn->query($sql) === TRUE) {
@@ -20,7 +20,7 @@ if($dat > 200) {  // <== ini untuk merubah jarak
 }
 else {
 
-    $kod = '11';
+    $kod = '10';
 
     $sql = "INSERT INTO antrian (kode) VALUES ('$kod')";
 
@@ -32,30 +32,29 @@ else {
     $conn->close();
 }
 
-// // Panel 2 (21 masuk ---- 20 keluar)
-// if($dat > 200) {  // <== ini untuk merubah jarak
+// Panel 2 (21 masuk ---- 20 keluar)
+if($dat > 200 && $dat <= 700) {  // <== ini untuk merubah jarak
 
-//     $kod = '20';
-//     $sql = "INSERT INTO antrian (kode) VALUES ('$kod')";
+    $kod = '21';
+    $sql = "INSERT INTO antrian (kode) VALUES ('$kod')";
 
-//     if ($conn->query($sql) === TRUE) {
-//         echo "New record created successfully";
-//     } else {
-//         echo "Error: " . $sql . "<br>" . $conn->error;
-//     }
-//     $conn->close();
-// }
-// else {
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+    $conn->close();
+}
+else {
 
-//     $kod = '21';
+    $kod = '20';
 
-//     $sql = "INSERT INTO antrian (kode) VALUES ('$kod')";
+    $sql = "INSERT INTO antrian (kode) VALUES ('$kod')";
 
-//     if ($conn->query($sql) === TRUE) {
-//         echo "New record created successfully";
-//     } else {
-//         echo "Error: " . $sql . "<br>" . $conn->error;
-//     }
-//     $conn->close();
-// }
-?>
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+    $conn->close();
+}

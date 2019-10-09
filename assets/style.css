@@ -101,6 +101,23 @@ body {
     }
   }    
 
+
+  .success {
+    color: green;
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }  
+
 .button {
     background-color: #4CAF50; /* Green */
     border: none;

@@ -5,8 +5,10 @@ $result2 = $conn->query("SELECT TIME(created_at) AS jam2, kode FROM antrian ORDE
 $jam = $result['jam'];
 $jam2 = $result2['jam2'];
 $kode = $result2['kode'];
-if(Empty($jam)) { 
-	echo '<font color=red>No Data!</font>'; } 
-	else if($jam2 && $kode='10' || $jam2 && $kode='20'){ 
-		echo $jam2; }
-		else { echo $jam; }
+if (empty($jam)) {
+	echo '<font color=red>No Data!</font>';
+} else if ($jam2 && $kode = '10' || $jam2 && $kode = '20') {
+	echo $jam2;
+} else {
+	echo $jam;
+}
